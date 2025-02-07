@@ -1,10 +1,10 @@
 import React from "react";
 import { InstantSearch } from "react-instantsearch";
-import searchClient from "../utils/algoliaClient";
 import SearchBar from "../components/SearchBar";
 import SearchResults from "../components/SearchResults";
 import FilterSidebar from "../components/FilterSidebar";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import searchClient from "../utils/algoliaClient.jsX";
 
 const Home = () => {
   return (
@@ -23,7 +23,11 @@ const Home = () => {
       </div>
 
       {/* InstantSearch Wrapper */}
-      <InstantSearch searchClient={searchClient} indexName="products">
+      <InstantSearch
+        searchClient={searchClient}
+        future={{ preserveSharedStateOnUnmount: true }}
+        indexName="products"
+      >
         {/* Search Bar Section */}
         <div className="">
           <SearchBar />

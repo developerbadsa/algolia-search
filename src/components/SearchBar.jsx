@@ -5,6 +5,7 @@ const SearchBar = () => {
   return (
     <div className="p-4 flex items-center gap-2">
       <SearchBox
+      onChange={(event) => console.log("Search Query:", event.currentTarget.value)}
         classNames={{
           root: "w-full flex items-center justify-center bg-gray-200 rounded-full px-4 py-2",
           form: "flex justify-center items-center border border-gray-300  p-1  rounded-full",
