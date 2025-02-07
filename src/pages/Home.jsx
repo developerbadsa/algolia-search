@@ -12,7 +12,10 @@ const Home = () => {
       {/* Page Title */}
       <div className="text-center mb-8">
         <h1 className="text-4xl gap-3 font-extrabold text-gray-800 flex justify-center align-middle items-center">
-          <span className="mt-2"><FaMagnifyingGlass className="text-2xl" /></span> Algolia Instant Search
+          <span className="mt-2">
+            <FaMagnifyingGlass className="text-2xl" />
+          </span>{" "}
+          Algolia Instant Search
         </h1>
         <p className="text-lg text-gray-500 mt-2">
           Search and filter products with ease.
