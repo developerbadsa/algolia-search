@@ -4,11 +4,11 @@ import SearchBar from "../components/SearchBar";
 import SearchResults from "../components/SearchResults";
 import FilterSidebar from "../components/FilterSidebar";
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import searchClient from "../utils/algoliaClient.jsX";
+import searchClient from "../utils/algoliaClient";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gray-50 py-10 px-4">
+    <div className="min-h-screen max-w-7xl mx-auto bg-gray-50 py-10 px-4">
       {/* Page Title */}
       <div className="text-center mb-8">
         <h1 className="text-4xl gap-3 font-extrabold text-gray-800 flex justify-center align-middle items-center">
